@@ -11,10 +11,8 @@ https://www.fimea.fi/laakehaut_ja_luettelot/perusrekisteri
 
 https://www.fimea.fi/web/en/databases_and_registers/basic-register
 
-The source files need to be manually downloaded and 
 
-
-## File naming conventions
+## SQL file naming conventions
 
 SQL-files are named using flyway conventions, typically
 
@@ -76,5 +74,15 @@ maaraamisehto table is used for both maaraamisehto and maaraamisehto_m
 #### fix data (broken csv)
 
 - there are some empty lines in laakeaine.txt (66648, 67281) These are removed in etl script.
+
+
+
+## OHDSI Export views
+
+Views named `export_ohdsi_*` are intended for exporting mapping tables to submit drug mappings to OHDSI maintained RxNorm Extension Vocabulary.
+
+
+The process and the tables are documented here: [FinOMOP drug mappings using RxE boiler](https://yhteistyotilat.fi/wiki08/x/JpWOBw)
+
 
 
